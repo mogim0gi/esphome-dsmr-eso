@@ -35,8 +35,11 @@ logger:
 api:
   encryption:
     key: !secret api_key
+    
 ota:
-  password: !secret ota_password
+  - platform: esphome
+    safe_mode: true
+    password: !secret ota_password
 
 #dashboard_import:
 #  package_import_url: github://geduxas/esphome-dsmr-eso/slimmelezer.yaml@main
