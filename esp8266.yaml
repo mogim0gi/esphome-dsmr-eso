@@ -6,10 +6,11 @@ external_components:
   - source: github://geduxas/esphome-dsmr-eso@main
     refresh: 0s
 
+esp8266:
+  board: d1_mini
+
 esphome:
   name: ${device_name}
-  platform: ESP8266
-  board: d1_mini
   name_add_mac_suffix: false
   project:
     name: geduxas.esodsmr
